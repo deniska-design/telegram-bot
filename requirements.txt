@@ -1,3 +1,5 @@
 sudo apt-get install python python-pip  
 pip install python-dotenv
-pip install pytelegrambotapi
+pip install tzdata
+pip install python-telegram-bot
+pip install "python-telegram-bot[job-queue]"
