@@ -45,12 +45,12 @@ async def error(update: Update, context: ContextTypes.DEFAULT_TYPE):
 if __name__ == '__main__':
     logger.info('Starting bot...')
     # 1. Crating the bot
-    #persistence = PicklePersistence(filepath='bot_data.pkl')
+    persistence = PicklePersistence(filepath='bot_data.pkl')
     app = ( 
         Application.
         builder().
         token(TOKEN).
-        #persistence(persistence).
+        persistence(persistence).
         build()
     )
 
@@ -70,8 +70,8 @@ if __name__ == '__main__':
         fallbacks=[
             CommandHandler("cancel", ConHandlers.cancel_command)
         ],
-        #name = 'conversation_handler',
-        #persistent = True
+        name = 'conversation_handler',
+        persistent = True
     )
 
     # 2. We link the command name to a specific functions:
