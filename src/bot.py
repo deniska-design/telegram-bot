@@ -54,24 +54,26 @@ if __name__ == '__main__':
         build()
     )
 
-    # Add conversation handler with the states ANALITIC_PROCESSING, LOG_PROCESSING and LOG_END
+    # Add conversation handler
     conv_handler = ConversationHandler(
         entry_points=[
             CommandHandler('log', ConHandlers.log_start_command),
             CommandHandler('analytic', ConHandlers.analytic_start_command),
-            CommandHandler('getstatistic', ConHandlers.statistic_start_command)
+            CommandHandler('getstatistic', ConHandlers.statistic_start_command),
+            CommandHandler('revoke', ConHandlers.revoke_command)
         ],
         states={
-            ConHandlers.ANALITIC_PROCESSING: [MessageHandler(filters.TEXT, ConHandlers.analitic_handler)],
-            ConHandlers.LOG_PROCESSING: [MessageHandler(filters.TEXT, ConHandlers.log_handler)],
-            ConHandlers.STATISTIC_PROCESSING: [MessageHandler(filters.TEXT, ConHandlers.statistic_handler)],
-            ConHandlers.LOG_END: [MessageHandler(filters.ALL, ConHandlers.log_end_handler)]
+            ConHandlers.ANALITIC_PROCESSING: [MessageHandler(filters.TEXT & ~filters.COMMAND, ConHandlers.analitic_handler)],
+            ConHandlers.LOG_PROCESSING: [MessageHandler(filters.TEXT & ~filters.COMMAND, ConHandlers.log_handler)],
+            ConHandlers.STATISTIC_PROCESSING: [MessageHandler(filters.TEXT & ~filters.COMMAND, ConHandlers.statistic_handler)],
+            ConHandlers.REVOKE_PROCESSING: [MessageHandler(filters.TEXT & ~filters.COMMAND, ConHandlers.revoke_handler)],
+            ConHandlers.LOG_END: [MessageHandler(filters.ALL & ~filters.COMMAND, ConHandlers.log_end_handler)]
         },
         fallbacks=[
             CommandHandler("cancel", ConHandlers.cancel_command)
         ],
         name = 'conversation_handler',
-        persistent = True
+        persistent = False
     )
 
     # 2. We link the command name to a specific functions:
