@@ -4,7 +4,7 @@
 
 ---
 
-##  Media & Demo
+## Media & Demo
 
 *(Add your screenshots or GIFs here)*
 
@@ -12,7 +12,7 @@
 
 ---
 
-##  Features
+## Features
 
 The bot uses conversation handlers to manage multi-step inputs and interactive menus:
 
@@ -28,7 +28,7 @@ The bot uses conversation handlers to manage multi-step inputs and interactive m
 
 ---
 
-##  Tech Stack & Software
+## Tech Stack & Software
 
 * **Language:** Python
 * **Libraries & Frameworks:** `python-telegram-bot`, `python-dotenv`, `matplotlib`
@@ -36,7 +36,7 @@ The bot uses conversation handlers to manage multi-step inputs and interactive m
 
 ---
 
-## 📦 How to Run
+## How to Run
 
 ### Option 1: Use the Live Bot
 Simply open Telegram, navigate to [@MySimpleAssistentBot](https://t.me/MySimpleAssistentBot), and press **Start** to begin tracking.
@@ -77,7 +77,7 @@ Simply open Telegram, navigate to [@MySimpleAssistentBot](https://t.me/MySimpleA
 
 ---
 
-## 🧠 What I Learned & Challenges
+## What I Learned & Challenges
 
 * **Learning Python on the Go:** Since this was my first Python project, my main goal was to learn the language while building a real-world application. **Because of this, I made extensive use of AI, but strictly as a research and learning assistant—to search for information, discover libraries, explore command syntax, and get clear conceptual explanations.**
 * **C++ to Python Transition:** Coming from a C++ background, I was constantly surprised by how concise and straightforward Python makes complex operations that would otherwise require significantly more boilerplate in C++. I learned core Python syntax alongside fundamental data structures like tuples, dictionaries, lists, and sets.
@@ -88,6 +88,6 @@ Simply open Telegram, navigate to [@MySimpleAssistentBot](https://t.me/MySimpleA
 
 ---
 
-## 📜 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
