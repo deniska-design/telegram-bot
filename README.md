@@ -4,9 +4,11 @@
 
 ---
 
-## Media & Demo
+## Demo
 
-*(Add your screenshots or GIFs here)*
+<img width="536" height="517" alt="photo_2026-09-17_17-32-36" src="https://github.com/user-attachments/assets/780a55e2-b97b-4307-b54c-796936fd8129" />
+
+<img width="577" height="747" alt="photo_2026-09-17_17-32-05" src="https://github.com/user-attachments/assets/a8168dc2-83e9-47fc-9738-57302c871c9b" />
 
 * **Try the Bot on Telegram:** [@MySimpleAssistentBot](https://t.me/MySimpleAssistentBot)
 
