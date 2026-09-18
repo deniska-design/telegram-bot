@@ -58,7 +58,7 @@ if __name__ == '__main__':
     conv_handler = ConversationHandler(
         entry_points=[
             CommandHandler('log', ConHandlers.log_start_command),
-            CommandHandler('analytic', ConHandlers.analytic_start_command),
+            CommandHandler('get', ConHandlers.analytic_start_command),
             CommandHandler('getstatistic', ConHandlers.statistic_start_command),
             CommandHandler('revoke', ConHandlers.revoke_command)
         ],
