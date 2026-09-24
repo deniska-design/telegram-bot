@@ -58,7 +58,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     '"/cancel" -  cancel your conversation\n' 
     'activities:\n'
     '"/log" - to log information about the user\n'
-    '"/analytic" - get data about activity\n'
+    '"/get" - get data about activity\n'
     '"/statistic" - get statistic of activity\n'
     '"/revoke" - revoke data for today\n')
 
