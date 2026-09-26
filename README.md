@@ -1,4 +1,3 @@
-```
 # Activity Tracker Bot
 
 > A simple Telegram bot to track your daily activities (like sleep, workouts, and study) and generate visual weekly statistics.
@@ -51,7 +50,6 @@ Simply open Telegram, navigate to [@MySimpleAssistentBot](https://t.me/MySimpleA
    git clone https://github.com/deniska-design/telegram-bot.git
    cd telegram-bot
    ```
-```
 2. **Set up Virtual Environment & Install Dependencies:**
    ```bash
    # Create a virtual environment
@@ -66,18 +64,18 @@ Simply open Telegram, navigate to [@MySimpleAssistentBot](https://t.me/MySimpleA
    # Install required packages
    pip install -r requirements.txt
    ```
-```
+
 3. **Configure Environment Variables:**
    Create a `.env` file in the root directory and add your Telegram bot token:
    ```env
    BOT_TOKEN=your_telegram_bot_token_here
    ```
-```
+
 4. **Run the Bot:**
    ```bash
    python main.py
    ```
-```
+
 ---
 
 ## What I Learned & Challenges
